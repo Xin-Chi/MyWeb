@@ -126,3 +126,22 @@ footer {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
+@media only screen and (max-width: 600px) {
+    .aboutme {
+        width: 100%; /* 修改寬度為100%以使其在手機上佔滿寬度 */
+        padding-right: 0; /* 移除右側填充 */
+    }
+
+    .aboutme img {
+        max-width: 100%; /* 將圖片寬度設置為100%以自適應手機屏幕 */
+    }
+
+    .contact-info {
+        position: relative; /* 將位置改為相對位置 */
+        width: 100%; /* 將寬度設置為100%以使其佔滿寬度 */
+        margin-top: 10px; /* 添加一些頂部間距以避免重疊 */
+        text-align: center; /* 將文本居中對齊 */
+    }
+}
