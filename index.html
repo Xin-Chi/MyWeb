@@ -40,29 +40,76 @@
 
 
 </head>
+<script>
+    
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    /*document.body.style.backgroundColor = "rgba(0,0,0,0.4)";*/
+  }
+  /*關閉側欄，恢復原始側欄寬度，主體左跨度、背景透明度*/
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "-250";
+      document.body.style.backgroundColor = "white";
+  }
+
+
+    
+</script>
 <body>
     <header>
         <h1>MyWeb</h1>
     </header>
     <main>
+        <div id="mySidenav" class="sidenav" >
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-labelledby="navbarDropdownMenuLink">&times;</a>
+              <a class="dropdown-item" href="{% url 'test:test' %}"><img src="images/Home.png "style="width: 25px;height: 25px">&nbsp;&nbsp;首頁&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'desktop:desktop' %}"><img src="images/park.png "style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'Visit:Visit' %}"><img src="images/visit.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'gungou:gungou' %}"><img src="images/announce.png "style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'package:package' %}"><img src="images/store.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="http://www.csh.org.tw/"><img src="images/postal.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'appeal:appeal' %}"><img src="images/appeal.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'announce:announce' %}"><img src="images/resident.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'shift:shift' %}"><img src="images/permission.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+          </div>
+        <div id="main4" >
+          <span style="font-size:30px; cursor:pointer;" onclick="openNav()">&#9776; </span>
+        </div>
+
         <section id="introduction">
-            <h2>About Me</h2>
-            <p class="aboutme" >During my undergraduate studies, I focused on the integration of medical and information technology applications. 
-                I actively engaged with medical units and utilized natural language processing techniques to enhance operational workflows. 
-                My skills include processing unstructured articles using N-gram, building systems for medical staff using the Django framework, 
-                database management, data cleansing, and developing rule-based AI automation for case processing to streamline manpower. Additionally, 
-                I was honored with the first prize in a project presentation on campus.
-                To further refine my experiences and abilities,I am eager to seek opportunities for summer internships to broaden my horizons and gain practical experience.</p>
+            
+            <div>
+                <h2 >About Me<br></h2>
+                <div class="aboutme" >
+                    <p id="abouttext">During my undergraduate studies, I focused on the integration of medical and information technology applications. 
+                    I actively engaged with medical units and utilized natural language processing techniques to enhance operational workflows. 
+                    My skills include processing unstructured articles using N-gram, building systems for medical staff using the Django framework, 
+                    database management, data cleansing, and developing rule-based AI automation for case processing to streamline manpower. Additionally, 
+                    I was honored with the first prize in a project presentation on campus.
+                    To further refine my experiences and abilities,I am eager to seek opportunities for summer internships to broaden my horizons and gain practical experience.
+                    </p>
+                </div>
+                <div class="aboutme">
+                    <img id="imgme" src="images/S1697.jpg" />
+                    <div class="contact-info">
+                        <p>
+                        contact：0909-000-000<br>
+                        Email：lexlex4545@gmail.com<br>
+                        Education：<br>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
         </section>
-        <!--
-        <section id="hobbies">
-            <h2>興趣愛好</h2>
-            <p></p>
-        </section>
-        <section id="contact">
-            <h2>聯絡方式</h2>
-            <p></p>
-        </section>-->
+
+        
+
+
+
     </main>
     
 
