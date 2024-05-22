@@ -128,7 +128,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .aboutme {
         width: 100%; /* 修改寬度為100%以使其在手機上佔滿寬度 */
         padding-right: 0; /* 移除右側填充 */
