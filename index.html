@@ -43,16 +43,20 @@
 <script>
     
     function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    /*document.body.style.backgroundColor = "rgba(0,0,0,0.4)";*/
-  }
-  /*關閉側欄，恢復原始側欄寬度，主體左跨度、背景透明度*/
-  function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("main").style.marginLeft= "-250";
-      document.body.style.backgroundColor = "white";
-  }
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        /*document.body.style.backgroundColor = "rgba(0,0,0,0.4)";*/
+    }
+      /*關閉側欄，恢復原始側欄寬度，主體左跨度、背景透明度*/
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "-250";
+        document.body.style.backgroundColor = "white";
+    }
+    function btn1(){
+        window.location.href = "infection.html";
+    }
+
 
 
     
@@ -108,7 +112,7 @@
 
         <div class="button-container" style="margin-left: 15%;margin-top: 2%;">
             <div class="image-button">
-              <img src="大三元社區系統.png" alt="Button 1">
+              <img src="感控收案網站 - 複製2.png" alt="Button 1" onclick="btn1()">
               <span class="button-title">Button 1 Title</span>
             </div>
             <div class="image-button">
@@ -116,7 +120,7 @@
               <span class="button-title">Button 2 Title</span>
             </div>
             <div class="image-button">
-              <img src="感控收案網站 - 複製2.png" alt="Button 3">
+              <img src="大三元社區系統.png" alt="Button 3">
               <span class="button-title">Button 3 Title</span>
             </div>
             <div class="image-button">
