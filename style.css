@@ -65,6 +65,7 @@ footer {
 .aboutme img {
     display: block;
     margin: 0 auto;
+    margin-right: 40%;
     max-width: 40%;
 }
 
@@ -81,7 +82,10 @@ footer {
 .contact-info p {
     margin: 5px 0;
 }
-
+.highlight {
+    font-weight: bold;
+    color: blue;
+}
 
 
   
@@ -111,7 +115,7 @@ footer {
 
 /*側欄標籤和關閉按鈕光標的效果*/
 .sidenav a:hover, .offcanvas a:focus{
-    color: black;
+    color: rgb(182, 180, 180);
 }
 
 /*側欄和關閉按鈕的位置選擇器*/
@@ -127,7 +131,7 @@ footer {
   .sidenav a {font-size: 18px;}
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .aboutme {
         width: 100%; /* 修改寬度為100%以使其在手機上佔滿寬度 */
         padding-right: 0; /* 移除右側填充 */
