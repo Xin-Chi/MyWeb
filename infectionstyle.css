@@ -127,9 +127,8 @@ footer {
 
 /*側欄標籤和關閉按鈕光標的效果*/
 .sidenav a:hover, .offcanvas a:focus{
-    color: black;
+    color: rgb(182, 180, 180);
 }
-
 /*側欄和關閉按鈕的位置選擇器*/
 .sidenav .closebtn {
     position: absolute;
