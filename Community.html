@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeb</title>
+    <link rel="stylesheet" href="Communitystyle.css">
+    
+    
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-select.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap.rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-utilities.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css' %}">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="{% static 'css_js/jquery-3.5.1.slim.min.js' %}"></script>
+    <script src="{% static 'css_js/popper.min.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-select.min.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-5.0.2-dist/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-5.0.2-dist/js/bootstrap.esm.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-5.0.2-dist/js/bootstrap.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-5.0.2-dist/js/bootstrap.min.js' %}"></script>
+
+
+</head>
+<script>
+    
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        /*document.body.style.backgroundColor = "rgba(0,0,0,0.4)";*/
+    }
+    /*關閉側欄，恢復原始側欄寬度，主體左跨度、背景透明度*/
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "-250";
+        document.body.style.backgroundColor = "white";
+    }
+
+    
+</script>
+<body>
+    <header>
+        <h1>MyWeb</h1>
+    </header>
+    <main>
+        <div id="mySidenav" class="sidenav" >
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-labelledby="navbarDropdownMenuLink">&times;</a>
+              <a class="dropdown-item" href="index.html"><img src="images/Home.png "style="width: 25px;height: 25px">&nbsp;首頁&emsp;&emsp;</a>
+              <a class="dropdown-item" href="infection.html"><img src="images/resident.png"style="width: 25px;height: 25px">&nbsp;感染智慧管控</a>
+              <a class="dropdown-item" href="Tokenize.html"><img src="images/announce.png"style="width: 25px;height: 25px">&nbsp;醫療文字處理</a>
+              <a class="dropdown-item" href="Apnea.html"><img src="images/permission.png"style="width: 25px;height: 25px">&nbsp;睡眠中止症分類</a>
+              <a class="dropdown-item" href="Community.html"><img src="images/appeal.png"style="width: 25px;height: 25px">&nbsp;社區系統建置</a>
+              <!--
+              <a class="dropdown-item" href="http://www.csh.org.tw/"><img src="images/postal.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'appeal:appeal' %}"><img src="images/store.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'announce:announce' %}"><img src="images/park.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'shift:shift' %}"><img src="images/visit.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+        -->
+        </div>
+        <div id="main4" >
+          <span style="font-size:30px; cursor:pointer;" onclick="openNav()">&#9776; </span>
+          
+            <div class="content-container">
+                
+                <div class="banner">
+                    <h2>社區系統建置</h2>
+                    <img src="images/大三元社區系統.png" alt="Banner Image">
+                </div>
+                <div class="description">
+                    <h2>中山附醫人工智慧中心</h2>
+                    <p>待補 嗷嗷待哺</p>
+                        
+                    <div class="hashtags">
+                        <span>#喵</span>
+                        <span>#汪</span>
+                        <span>#啥</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content">
+                
+                <p>
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </main>
+    
+
+
+
+
+
+
+    <footer>
+        <p>© 2024 我的網站</p>
+    </footer>
+</body>
+</html>
