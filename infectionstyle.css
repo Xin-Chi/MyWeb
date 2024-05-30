@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* 淺藍色背景 */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px; /* 这里设置为footer的高度 */
+}
+
+header {
+    background-color: #e0f7fa; /* 更淺的藍色作為標題背景 */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #007acc; /* 深藍色標題 */
+}
+
+footer {
+    background-color: #e0f7fa;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 50px; /* 确定footer的高度 */
+}
+
+
+
+.banner {
+    flex: 1;
+}
+.content-container {
+    display: flex;
+    margin-left: 15%;
+    padding: 20px;
+}
+
+.banner img {
+    width: 97%;
+    height: auto;
+}
+
+.description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description h2 {
+    margin: 0;
+    font-family: "Microsoft JhengHei", Arial, sans-serif; /* 使用微軟正黑體字體 */
+    font-weight: bold; /* 粗體 */
+    color: #333; /* 黑色 */
+}
+
+.description p {
+    font-family: Arial, sans-serif; /* 使用 Arial 字體 */
+    font-weight: bold; /* 粗體 */
+    font-size: 20px; /* 字體大小 */
+    color: #555; /* 深灰色 */
+}
+.description .highlight {
+    font-weight: bold;
+    color: red;
+}
+.content {
+    margin-left: 15%;
+    padding: 20px;
+}
+
+.hashtags {
+    margin-top: 10px;
+}
+
+.hashtags span {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+
+
+  
+  /*側邊欄選擇器*/
+.sidenav {
+    height: 100%;
+    width: 0; /*原始寬度爲0*/
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/*側邊欄選項選擇器*/
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/*側欄標籤和關閉按鈕光標的效果*/
+.sidenav a:hover, .offcanvas a:focus{
+    color: rgb(182, 180, 180);
+}
+/*側欄和關閉按鈕的位置選擇器*/
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}/* Media Query for Mobile Devices */
+@media (max-width: 1200px) {
+    .content-container {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .banner img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .description {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #main {
+        padding: 0;
+    }
+}
+
+
