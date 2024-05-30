@@ -47,17 +47,24 @@
         document.getElementById("main").style.marginLeft = "250px";
         /*document.body.style.backgroundColor = "rgba(0,0,0,0.4)";*/
     }
-      /*關閉側欄，恢復原始側欄寬度，主體左跨度、背景透明度*/
+    /*關閉側欄，恢復原始側欄寬度，主體左跨度、背景透明度*/
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft= "-250";
         document.body.style.backgroundColor = "white";
     }
     function btn1(){
-        window.location.href = "infection.html";
+        window.location.href = "infection.html"
     }
-
-
+    function btn2(){
+        window.location.href = "Tokenize.html";
+    }
+    function btn3(){
+        window.location.href = "Apnea.html";
+    }
+    function btn4(){
+        window.location.href = "Community.html";
+    }
 
     
 </script>
@@ -68,16 +75,18 @@
     <main>
         <div id="mySidenav" class="sidenav" >
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-labelledby="navbarDropdownMenuLink">&times;</a>
-              <a class="dropdown-item" href="index.html"<img src="Home.png "style="width: 25px;height: 25px">&nbsp;&nbsp;首頁&emsp;&emsp;</a>
-              <a class="dropdown-item" href="{% url 'desktop:desktop' %}"><img src="park.png "style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
-              <a class="dropdown-item" href="{% url 'Visit:Visit' %}"><img src="visit.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
-              <a class="dropdown-item" href="{% url 'gungou:gungou' %}"><img src="announce.png "style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
-              <a class="dropdown-item" href="{% url 'package:package' %}"><img src="store.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
-              <a class="dropdown-item" href="http://www.csh.org.tw/"><img src="postal.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
-              <a class="dropdown-item" href="{% url 'appeal:appeal' %}"><img src="appeal.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
-              <a class="dropdown-item" href="{% url 'announce:announce' %}"><img src="resident.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
-              <a class="dropdown-item" href="{% url 'shift:shift' %}"><img src="permission.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
-          </div>
+              <a class="dropdown-item" href="index.html"><img src="images/Home.png "style="width: 25px;height: 25px">&nbsp;首頁&emsp;&emsp;</a>
+              <a class="dropdown-item" href="infection.html"><img src="images/resident.png"style="width: 25px;height: 25px">&nbsp;感染智慧管控</a>
+              <a class="dropdown-item" href="Tokenize.html"><img src="images/announce.png"style="width: 25px;height: 25px">&nbsp;醫療文字處理</a>
+              <a class="dropdown-item" href="Apnea.html"><img src="images/permission.png"style="width: 25px;height: 25px">&nbsp;睡眠中止症分類</a>
+              <a class="dropdown-item" href="Community.html"><img src="images/appeal.png"style="width: 25px;height: 25px">&nbsp;社區系統建置</a>
+              <!--
+              <a class="dropdown-item" href="http://www.csh.org.tw/"><img src="images/postal.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'appeal:appeal' %}"><img src="images/store.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'announce:announce' %}"><img src="images/park.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'shift:shift' %}"><img src="images/visit.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+        -->
+        </div>
         <div id="main4" >
           <span style="font-size:30px; cursor:pointer;" onclick="openNav()">&#9776; </span>
         </div>
@@ -87,21 +96,23 @@
             <div>
                 <h2 >About Me<br></h2>
                 <div class="aboutme" >
-                    <p id="abouttext">During my undergraduate studies, I focused on the integration of medical and information technology applications. 
-                    I actively engaged with medical units and utilized natural language processing techniques to enhance operational workflows. 
-                    My skills include processing unstructured articles using N-gram, building systems for medical staff using the Django framework, 
-                    database management, data cleansing, and developing rule-based AI automation for case processing to streamline manpower. Additionally, 
-                    I was honored with the first prize in a project presentation on campus.
-                    To further refine my experiences and abilities,I am eager to seek opportunities for summer internships to broaden my horizons and gain practical experience.
+                    <p id="abouttext">我是鍾昕起，畢業於中山醫學大學醫學資訊學系。在大學期間，我曾在中山附醫人工智慧中心擔任兩年的研究助理
+                        其中工作範疇涵蓋了<strong class="highlight">N-gram針對非結構化文章進行處理、Django架構建置系統供護理人員使用、資料庫管理與資料清潔、
+                        撰寫基於規則的AI自動化收案</strong>節省人力等，這些經驗不僅豐富了我的技能，
+                        也讓我深刻理解了如何將資訊科技應用於醫療領域，同時計畫在校內也榮獲專題發表第一名。
+                        為精進自己的經驗及能力，目前就讀於中央生醫科學與工程研究所，期望能有暑期實習/兼職的機會以增進自己的視野與實作經驗。
                     </p>
                 </div>
                 <div class="aboutme">
-                    <img id="imgme" src="S1697.jpg" />
+                    <img id="imgme" src="images/S1697.jpg" />
                     <div class="contact-info">
                         <p>
                         contact：0909-000-000<br>
                         Email：lexlex4545@gmail.com<br>
                         Education：<br>
+                        &emsp;國立中央大學 生物醫學與工程學研究所<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;生醫資電組<strong class="highlight">(在學)</strong><br>
+                        &emsp;中山醫學大學 醫學資訊學系(畢業)
+                        <br>
                         </p>
                     </div>
                 </div>
@@ -113,19 +124,19 @@
         <div class="button-container" style="margin-left: 15%;margin-top: 2%;">
             <div class="image-button">
               <img src="感控收案網站.png" alt="Button 1" onclick="btn1()">
-              <span class="button-title">Button 1 Title</span>
+              <span class="button-title">感染智慧管控</span>
             </div>
             <div class="image-button">
-              <img src="文字處理.png" alt="Button 2">
-              <span class="button-title">Button 2 Title</span>
+              <img src="文字處理.png" alt="Button 2" onclick="btn2()">
+              <span class="button-title">醫療文字處理</span>
             </div>
             <div class="image-button">
-              <img src="大三元社區系統.png" alt="Button 3">
-              <span class="button-title">Button 3 Title</span>
+              <img src="睡覺.png" alt="Button 3" onclick="btn3()">
+              <span class="button-title">睡眠中止症分類</span>
             </div>
             <div class="image-button">
-              <img src="睡覺.png" alt="Button 4">
-              <span class="button-title">Button 4 Title</span>
+              <img src="大三元社區系統.png" alt="Button 4"onclick="btn4()">
+              <span class="button-title">社區系統建置</span>
             </div>
         </div>    
 
