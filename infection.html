@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeb</title>
+    <link rel="stylesheet" href="infectionstyle.css">
+    
+    
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-select.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap.rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-utilities.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css_js/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css' %}">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="{% static 'css_js/jquery-3.5.1.slim.min.js' %}"></script>
+    <script src="{% static 'css_js/popper.min.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-select.min.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-5.0.2-dist/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-5.0.2-dist/js/bootstrap.esm.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-5.0.2-dist/js/bootstrap.js' %}"></script>
+    <script src="{% static 'css_js/bootstrap-5.0.2-dist/js/bootstrap.min.js' %}"></script>
+
+
+</head>
+<script>
+    
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        /*document.body.style.backgroundColor = "rgba(0,0,0,0.4)";*/
+    }
+    /*關閉側欄，恢復原始側欄寬度，主體左跨度、背景透明度*/
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "-250";
+        document.body.style.backgroundColor = "white";
+    }
+
+    
+</script>
+<body>
+    <header>
+        <h1>MyWeb</h1>
+    </header>
+    <main>
+        <div id="mySidenav" class="sidenav" >
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-labelledby="navbarDropdownMenuLink">&times;</a>
+              <a class="dropdown-item" href="index.html"><img src="images/Home.png "style="width: 25px;height: 25px">&nbsp;首頁&emsp;&emsp;</a>
+              <a class="dropdown-item" href="infection.html"><img src="images/resident.png"style="width: 25px;height: 25px">&nbsp;感染智慧管控</a>
+              <a class="dropdown-item" href="Tokenize.html"><img src="images/announce.png"style="width: 25px;height: 25px">&nbsp;醫療文字處理</a>
+              <a class="dropdown-item" href="Apnea.html"><img src="images/permission.png"style="width: 25px;height: 25px">&nbsp;睡眠中止症分類</a>
+              <a class="dropdown-item" href="Community.html"><img src="images/appeal.png"style="width: 25px;height: 25px">&nbsp;社區系統建置</a>
+              <!--
+              <a class="dropdown-item" href="http://www.csh.org.tw/"><img src="images/postal.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'appeal:appeal' %}"><img src="images/store.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'announce:announce' %}"><img src="images/park.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+              <a class="dropdown-item" href="{% url 'shift:shift' %}"><img src="images/visit.png"style="width: 25px;height: 25px">&nbsp;&nbsp;Research&emsp;&emsp;</a>
+        -->
+        </div>
+        <div id="main4" >
+          <span style="font-size:30px; cursor:pointer;" onclick="openNav()">&#9776; </span>
+
+            <div class="content-container">
+                <div class="banner">
+                    <img src="images/感控收案網站.png" alt="Banner Image">
+                </div>
+                <div class="description">
+                    <h2>合作單位(中山附醫感控科)</h2>
+                    <p>本計畫針對中山附醫感控科的血流感染檢體進行智慧化管理，利用<strong>N-gram技術</strong>處理非結構化資料，如檢驗報告和護理報告，進行專有名詞辨識和重點摘要，快速獲取文章中的關鍵資訊，節省護理人員的閱讀時間。
+                        資料存放和處理均使用<strong>MSSQL</strong>，並建立專屬於中山附醫感控科的詞典。同時，我們提供動態網頁供護理人員操作，簡化整體收案流程。最終，通過<strong>基於規則的AI</strong>對資料進行自動分類。
+                        以2021年為例，在22,961份檢驗報告中，透過自動化收案判定，僅563例需額外檢查，減少了<strong class="highlight">97%的人工覆核工作量，後續以Power BI製作感染儀表板供護理人員使用。</strong>。
+                    <div class="hashtags">
+                        <span>#N-gram</span>
+                        <span>#MSSQL</span>
+                        <span>#基於規則的AI自動分類</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content">
+                <h2>醫療相關感染管控流程改善
+                </h2>
+                <p><b>ARTIFICIAL INTELLIGENCE-BASED HEALTHCARE-ASSOCIATED BLOODSTREAM INFECTION SURVEILLANCE
+                    AND CLASSIFICATION SYSTEM</b><br><br>
+                    Wei-Chih Shen, <b>Xin-Chi Chung,</b> Yao-Tung Wang, Chien-Feng Li,Wen-Jiun Huang, I-Chen Lin1, Yi-Han Liao1,Yuan-Ti Lee<br>
+                    Artificial Intelligence Center, Chung Shan Medical University Hospital, Department of Medical Informatics, School of
+                    Medicine, Chung Shan Medical University,<br> Division of Pulmonary Medicine, Division of Infectious Diseases, Department
+                    of Internal Medicine, Department of Medical Management,Chung Shan Medical University Hospital, Taichung, Taiwan
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </main>
+    
+
+
+
+
+
+
+    <footer>
+        <p>© 2024 我的網站</p>
+    </footer>
+</body>
+</html>
